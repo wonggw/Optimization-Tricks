@@ -5,8 +5,8 @@ Tricks I learnt along the way. :smile:
 
 ## Algorithm/Data structure
 
-1. Calculating Factorial  
-  Precomputing Factorial initialing and log/Ln it. Exponential it when retriving the factorial. This is because Factorial gets very large quickly and the computer cannot store the number with limited bytes.
+1. Factorial  
+  Precompute Factorial initially and log/Ln it. Exponential it when retriving the factorial. This is because Factorial gets very large quickly and the computer cannot store the number with limited bytes. Also, remember to use double to prevent precision error.
   
 2. Binary search  - O(log n)  
   Fast for searching sorted data.
