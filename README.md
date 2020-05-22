@@ -6,10 +6,15 @@ Tricks I learnt along the way. :smile:
 ## Algorithm/Data structure
 
 1. Factorial  
-  Precompute Factorial initially and log/Ln it. Exponential it when retriving the factorial. This is because Factorial gets very large quickly and the computer cannot store the number with limited bytes. Also, remember to use double to prevent precision error.
+  Precompute log/Ln Factorial initially. Exponential it when retriving the factorial to get the exact answer.  
+  This is because Factorial gets very large quickly and the computer cannot store the number with limited bytes.   
+  Also, remember to use double to prevent overflow as the number can get extremely large. 
   
 2. Binary search  - O(log n)  
-  Fast for searching sorted data.
+  Fast for searching though data that is already sorted.  
+  Use check case to reduce the upper boundary or increase the lower boundary.
   
 3. Segmentation Tree  - O(log n)  
-  Efficient for summing an array. Querying and updating an array will be much faster than brute force.
+  Efficient for getting information from a subarray.  
+  Can be used for summation, getting the min or max for a range in an array.  
+  Querying and updating the array will be way faster than brute force method - O(n).
