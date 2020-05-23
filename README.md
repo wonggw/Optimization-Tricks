@@ -13,11 +13,11 @@ Tricks I learnt along the way. :smile:
 2. Matching Parenthesis  
   Uses a stack to store information inside the parenthesis that can be used later.
   
-3. Binary search  - O(log n)  
+3. Binary search  - O(log(n))  
   Fast for searching though data that is already sorted.  
   Uses a check case to reduce the upper boundary or increase the lower boundary.
 
-4. Segmentation Tree  - O(log n)  
+4. Segmentation Tree  - O(log(n))  
   Efficient for getting information from a subarray.  
   Can be used for summation, getting the min or max for a range in an array.  
   Querying and updating the array will be way faster than brute force method - O(n).   
@@ -26,4 +26,7 @@ Tricks I learnt along the way. :smile:
   Solves optimization problem in graphs by searching the breadth first. Uses a queue(FIFO) to temporary store the node.   
   
 6. Depth First Search 
-  Solves optimization problem in graphs by searching the depth first. Uses a stack(LIFO) to temporary store the node. 
+  Solves optimization problem in graphs by searching the depth first. Uses a stack(LIFO) to temporary store the node.  
+  
+7. Sets  - O(log(n))
+  Useful for finding a value in 2 array. This is way faster than the brute force method of iterating though 2 array which is O(n<sup>2</sup>). This is done by creating a hashing function in memory.
