@@ -9,7 +9,7 @@ int j = 0;
 char b[MAX];
 string s;
 
-void solve() {
+void matchingParenthesis() {
     cin >> s;
     stack<int,vector<int>> a;
     a.push(1);
@@ -34,6 +34,6 @@ int main() {
 
     for (int i = 1; i <= t; ++i) {
         cout << "Case #" << i << ": ";
-        solve();
+        matchingParenthesis();
     }
 }
