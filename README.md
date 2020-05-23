@@ -11,13 +11,19 @@ Tricks I learnt along the way. :smile:
   Also, remember to use double to prevent overflow as the number can get extremely large. 
   
 2. Matching Parenthesis  
-  Use a stack to store information inside the parenthesis that can be used later.
+  Uses a stack to store information inside the parenthesis that can be used later.
   
 3. Binary search  - O(log n)  
   Fast for searching though data that is already sorted.  
-  Use check case to reduce the upper boundary or increase the lower boundary.
+  Uses a check case to reduce the upper boundary or increase the lower boundary.
 
 4. Segmentation Tree  - O(log n)  
   Efficient for getting information from a subarray.  
   Can be used for summation, getting the min or max for a range in an array.  
-  Querying and updating the array will be way faster than brute force method - O(n).  
+  Querying and updating the array will be way faster than brute force method - O(n).   
+  
+5. Breadth First Search 
+  Solves optimization problem in graphs by searching the breadth first. Uses a queue(FIFO) to temporary store the node.   
+  
+6. Depth First Search 
+  Solves optimization problem in graphs by searching the depth first. Uses a stack(LIFO) to temporary store the node. 
