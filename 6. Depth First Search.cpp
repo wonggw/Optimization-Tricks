@@ -39,15 +39,15 @@ void BFS() {
         for (int j = 0; j < C; j++)
             if (st[i][j] == '1') ds[i][j] = 0, q.emplace(i, j);
 
-    int dx[] = { -1,1,0,0 };
-    int dy[] = { 0,0,-1,1 };
+    int dy[] = { -1,1,0,0 };
+    int dx[] = { 0,0,-1,1 };
     auto in = [&](int y, int x) {return 0 <= y && y < R && 0 <= x && x < C; };
 
     while (!q.empty()) {
-        int x, y;
-        tie(x, y) = q.top(); q.pop();
+        int y, x;
+        tie(y, x) = q.top(); q.pop();
         for (int k = 0; k < 4; k++) {
-            int nx = x + dx[k], ny = y + dy[k];
+            int ny = y + dy[k],nx = x + dx[k];
             if (!in(ny, nx)) continue;
             if (~ds[ny][nx]) continue;
             ds[ny][nx] = ds[y][x] + 1;
@@ -55,8 +55,8 @@ void BFS() {
         }
     }
     for (int i = 0; i < R; i++)
-    { 
-        for (int j = 0; j < C; j++) cout << ds[i][j]<<"  ";
+    {
+        for (int j = 0; j < C; j++) cout << ds[i][j] << "  ";
         cout << "\n";
     }
             
