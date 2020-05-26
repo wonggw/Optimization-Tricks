@@ -22,11 +22,14 @@ Tricks I learnt along the way. :smile:
   Can be used for summation, getting the min or max for a range in an array.  
   Querying and updating the array will be way faster than brute force method - O(n).   
   
-5. Breadth First Search 
+5. Breadth First Search  
   Solves optimization problem in graphs by searching the breadth first. Uses a queue(FIFO) to temporary store the node.   
   
-6. Depth First Search 
+6. Depth First Search  
   Solves optimization problem in graphs by searching the depth first. Uses a stack(LIFO) to temporary store the node.  
   
-7. Sets  - O(log(n))
-  Useful for finding a value in 2 array. This is way faster than the brute force method of iterating though 2 array which is O(n<sup>2</sup>). This is done by creating a hashing function in memory.
+7. Sets  - O(log(n))  
+  Useful for finding a value in 2 array. This is way faster than the brute force method of iterating though 2 array which is O(n<sup>2</sup>). This is done by creating a hashing function in memory.  
+  
+8. BackTracking - O(n<sup>p</sup>)  
+  Using recursion to derive the different combination of a given variable. Like all recursion function, there is a termination condition and propagation condition. 
