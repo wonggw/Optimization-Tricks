@@ -34,8 +34,11 @@ Tricks I learnt along the way. :smile:
 8. BackTracking - O(n<sup>p</sup>)  
   Using recursion to derive the different combination of a given variable. Like all recursion function, there is a termination condition and propagation condition.  
   
-8. Trie - O(n)  
+9. Trie - O(n)  
   Useful for storing a dictionary of words and retrieving it later. It create a alphabet tree.  
   
 10. Deadlock Detection - O(V + E)  
   This is used to check whether there is a cycle in a graph which will result in a deadlock. This is because variable depends on each other and there is no start and end. Useful to check for application with single resource instance in distributed system. Actually, this algorithm is build upon a recursive implementation of depth first search. For iterative approach, can look up on Kahn’s algorithm. 
+  
+11. Spliting Delimiter
+  Split string into substring based on delimiter. Useful for manipulating string.
