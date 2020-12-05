@@ -40,5 +40,5 @@ Tricks I learnt along the way. :smile:
 10. Deadlock Detection - O(V + E)  
   This is used to check whether there is a cycle in a graph which will result in a deadlock. This is because variable depends on each other and there is no start and end. Useful to check for application with single resource instance in distributed system. Actually, this algorithm is build upon a recursive implementation of depth first search. For iterative approach, can look up on Kahn’s algorithm. 
   
-11. Spliting Delimiter
+11. Spliting Delimiter  
   Split string into substring based on delimiter. Useful for manipulating string.
