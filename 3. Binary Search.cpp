@@ -4,15 +4,15 @@ using namespace std;
 #define ll long long
 #define ar array
 
-const int  Max=1000;
+const int  Max = 1000;
 int a[Max];
 
-int val = 30;
+int val = 70;
 
 bool check(int mid)
 {
-	if (mid < val) return 0;
-	else return 1;
+	if (val > mid) return 1;
+	else return 0;
 
 }
 void binarySearch() {
@@ -23,8 +23,9 @@ void binarySearch() {
 	while (l < r)
 	{
 		int mid = (l + r) / 2;
-		if (check(mid)) r=mid;
-		else l=mid+1;
+		cout << mid<<"    ";
+		if (check(mid)) l = mid + 1;
+		else r = mid;
 	}
 	cout << l << "\n";
 }
@@ -35,7 +36,7 @@ int main() {
 
 	int t;
 	cin >> t;
-	
+
 	for (int i = 1; i <= t; ++i) {
 		cout << "Case #" << i << ": ";
 		binarySearch();
