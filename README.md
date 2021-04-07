@@ -42,3 +42,7 @@ Tricks I learnt along the way. :smile:
   
 11. Spliting Delimiter  
   Split string into substring based on delimiter. Useful for manipulating string.
+  
+12. Huffman Coding - O(nlog(n))  
+  It is a lossless data compression algorithm that is used to store data based on their appearances frequency. It is done by encoding it into a binary tree and decoding it by traversing the tree.
+
